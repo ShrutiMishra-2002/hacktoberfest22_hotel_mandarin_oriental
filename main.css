@@ -1,3 +1,4 @@
+/* Font Imortation */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 :root{
@@ -46,6 +47,8 @@ img{
     width: 100%;
     display: block;
 }
+
+/* Media Querry */
 @media(max-width: 500px){
     body{
         font-size: 14px;
@@ -107,6 +110,8 @@ img{
 .head-btn:hover{
     background: transparent;
 }
+
+/* Media Querry */
 @media(max-width: 500px){
     .head-btn{
         font-size: 17px;
@@ -172,6 +177,7 @@ img{
     background: var(--yellow);
     color: #fff;
 }
+/* Media Querry */
 @media(max-width: 400px){
     .sidenav{
         width: 100vw;
@@ -220,6 +226,7 @@ img{
     background: var(--yellow);
     color: #fff;
 }
+/* Media Querry */
 @media(min-width: 992px){
     .services-container{
         display: grid;
@@ -230,6 +237,8 @@ img{
         font-size: 10px!important;
     }
 }
+
+/* Media Querry */
 @media(max-width: 500px){
     .title h2{
         font-size: 24px;
@@ -275,6 +284,8 @@ img{
     outline: 0;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
 }
+
+/* Media Querries  */
 @media(min-width: 768px){
     .book-form{
         grid-template-columns: repeat(2, 1fr);
@@ -347,6 +358,8 @@ img{
 .room-image:hover img{
     transform: scale(1.1);
 }
+
+/* Media Querries */
 @media (min-width: 900px){
     .rooms-container{
         display: flex;
@@ -422,6 +435,8 @@ img{
 .customer:hover{
     transform: translateY(-18px);
 }
+
+/* Media Querries */
 @media(min-width: 992px){
     .customers-container{
         display: grid;
@@ -486,6 +501,8 @@ img{
 .contact-item span{
     display: block;
 }
+
+/* Media Querries */
 @media(min-width: 900px){
     .footer-container{
         display: grid;

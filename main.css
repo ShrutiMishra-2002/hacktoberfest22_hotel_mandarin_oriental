@@ -523,3 +523,19 @@ img{
     left: 0;
     z-index: 5;
 }
+
+.btn {
+  background-color: #DB1F48;
+  color: #fff;
+  transition: background-color 1s;
+}
+
+.btn:hover {
+  background-color: #004369;
+}
+
+.btn:focus,
+.btn:active {
+  background-color: black;
+  transition: none;
+}

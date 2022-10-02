@@ -416,6 +416,7 @@ img{
     height: 200px;
     border-radius: 40%;
     margin: 25px auto;
+    object-fit: cover;
 }
 .customer span{
     object-fit: cover;

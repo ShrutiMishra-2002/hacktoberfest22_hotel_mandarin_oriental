@@ -11,6 +11,11 @@
     margin: 0;
     font-family: 'Playfair Display', serif;
 }
+#a{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    align-self: center;
+}
 html{
     scroll-behavior: smooth;
 }

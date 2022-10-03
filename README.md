@@ -4,8 +4,12 @@ The Mandarin Oriental is a hotel website, it features check in checkout, custome
 
 <h4>[ In development Phase ] 
 
-<h2> 
-📌<a href="https://shrutimishra-2002.github.io/The-Mandarin-Oriental/" target="_blank">Visit our website 🚀</a>
+
+<div align="center">
+<h2> Click Button to view Website Deployment</h2>
+<a href="https://shrutimishra-2002.github.io/The-Mandarin-Oriental/" target="_blank" align="center"><img src="https://img.icons8.com/tiny-color/48/000000/near-me.png"/></a>
+</div>
+
 
 
 

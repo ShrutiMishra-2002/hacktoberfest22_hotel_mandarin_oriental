@@ -7,8 +7,8 @@
 }
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: 1rem;
+  margin: 1rem;
   font-family: "Playfair Display", serif;
 }
 html {
@@ -25,7 +25,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   width: 140px;
-  display: block;
+  display: flex;
   margin: 15px auto;
   cursor: pointer;
   transition: var(--transition);
@@ -262,8 +262,8 @@ img {
   .site-nav {
     display: block;
     position: fixed;
-    right: 5%;
-    font-size: 20px;
+    right: 4%;
+    font-size: 21px;
   }
 
   .site-name {
@@ -702,6 +702,7 @@ img {
     align-items: center;
   }
 }
+
 
 .showModal {
   position: fixed;

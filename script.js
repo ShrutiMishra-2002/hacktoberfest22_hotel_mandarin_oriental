@@ -33,3 +33,12 @@ navigations.forEach((nav) => {
     modal.classList.remove("showModal");
   });
 });
+
+/*Preloader Code*/
+
+var loader = document.querySelector(".loader")
+window.addEventListener("load", faded);
+
+function faded(){
+    loader.classList.add("disppear");
+}

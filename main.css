@@ -720,3 +720,26 @@ img {
   left: 0;
   z-index: 5;
 }
+
+/*Preloader*/
+.loader{
+  position: fixed;
+  top:0;
+  left: 0;
+  background-color: white;
+  height:100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disppear{
+  animation: faded 1s forwards;
+}
+@keyframes faded {
+  100%{
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+/*End of preloader*/

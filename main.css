@@ -656,6 +656,11 @@ img {
     pointer-events: none;
 }
 
+.owl-carousel .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container .cards .imgBx{
     position: absolute;
     top: 0;

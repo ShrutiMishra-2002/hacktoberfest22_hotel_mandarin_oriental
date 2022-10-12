@@ -451,13 +451,13 @@ img {
   grid-column-gap: 30px;
 }
 .title h2 {
-  font-size: 30px;
+  font-size: 40px;
   padding: 1rem;
 }
 
 @media (max-width: 700px) {
   .title h2 {
-    font-size: 1.1rem;
+    font-size: 2.1rem;
     padding: 1rem;
   }
 }
@@ -545,7 +545,7 @@ img {
   padding: 5px 20px;
 }
 .room-text h3 {
-  font-size: 24px;
+  font-size: 32px;
 }
 .room-text ul {
   list-style-type: none;

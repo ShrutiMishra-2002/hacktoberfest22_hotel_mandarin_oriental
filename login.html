@@ -23,16 +23,7 @@ h1{
   background-color: #D5C8AF;
 }
 
-button {   
-  background-color: #1A5236;   
-  width: 100%;
-  border-radius: 15px;
-  color: rgb(255, 255, 255);   
-  padding: 15px;   
-  margin: 10px 0px;   
-  border: none;   
-  cursor: pointer;
-} 
+
 label{
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -47,9 +38,7 @@ input[type=text], input[type=password] {
       box-sizing: border-box;  
       background: #DCD0BD ; 
   }  
-button:hover {   
-      background-color: black;  
-  }   
+
 .cancelbtn {   
       width: auto;   
       padding: 10px 18px;  
@@ -59,6 +48,38 @@ button:hover {
       padding: 25px;   
       /* background-color: lightblue;   */
   }  
+
+
+.btn {
+ background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%)
+}
+
+.btn {
+ margin: 10px;
+ padding: 15px 30px;
+ text-align: center;
+ text-transform: uppercase;
+ transition: 0.5s;
+ background-size: 200% auto;
+ color: white;
+ border-radius: 10px;
+ display: block;
+ border: 0px;
+ font-weight: 700;
+ box-shadow: 0px 0px 14px -7px #f09819;
+ width: 100%;
+}
+
+.btn:hover {
+ background-position: right center;
+ /* change the direction of the change here */
+ color: #fff;
+ text-decoration: none;
+}
+
+.btn:active {
+ transform: scale(0.95);
+}
 </style>   
 </head>    
 <body>    
@@ -69,7 +90,7 @@ button:hover {
             <input type="text" id="email" placeholder="Enter Username" name="username" required>  
             <label>Password : </label>   
             <input type="password" id="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit" id="login">Login</button>   
+            <button class="btn">Login</button>
             
     </form>     
 

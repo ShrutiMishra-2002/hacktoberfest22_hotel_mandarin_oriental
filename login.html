@@ -1,178 +1,190 @@
-<!DOCTYPE html>   
-<html>   
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<title> Login Page </title>  
-<style>   
-Body {  
-  font-family: Calibri, Helvetica, sans-serif;  
-  background-color:#d4c6ae;  
-}  
-h1{
-  text-align: center;
-  font-family: "Playfair Display", serif;
-}
-.container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  /* border: 2px solid white; */
-  border: 2px solid #D19548;
-  background-color: #D5C8AF;
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
 }
 
-
-label{
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-}
-input[type=text], input[type=password] {   
-      width: 100%;   
-      margin: 8px 0;  
-      padding: 12px 20px;   
-      display: inline-block;  
-      border: none; 
-      border-bottom: 2px solid #BE986F;   
-      box-sizing: border-box;  
-      background: #DCD0BD ; 
-  }  
-
-.cancelbtn {   
-      width: auto;   
-      padding: 10px 18px;  
-      margin: 10px 5px;  
-  }       
-.container {   
-      padding: 25px;   
-      /* background-color: lightblue;   */
-  }  
-
-
-.btn {
- background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%)
+body {
+	background: #f3e0e2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
 }
 
-.btn {
- margin: 10px;
- padding: 15px 30px;
- text-align: center;
- text-transform: uppercase;
- transition: 0.5s;
- background-size: 200% auto;
- color: white;
- border-radius: 10px;
- display: block;
- border: 0px;
- font-weight: 700;
- box-shadow: 0px 0px 14px -7px #f09819;
- width: 100%;
+h1 {
+	font-weight: bold;
+	margin: 0;
 }
 
-.btn:hover {
- background-position: right center;
- /* change the direction of the change here */
- color: #fff;
- text-decoration: none;
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
 }
 
-.btn:active {
- transform: scale(0.95);
+span {
+	font-size: 12px;
 }
-</style>   
-</head>    
-<body>    
-    <center> <h1> Customer Login Page </h1> </center>   
-    <form>  
-        <div class="container">   
-            <label>Email Id : </label>   
-            <input type="text" id="email" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" id="password" placeholder="Enter Password" name="password" required>  
-            <button class="btn">Login</button>
-            
-    </form>     
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-        import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
-        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyB2TQCjmAlmaxnacWHzeV4Evq7uNe_i9Dw",
-          authDomain: "hotel-mandarin-oriental-auth.firebaseapp.com",
-          databaseURL: "https://hotel-mandarin-oriental-auth-default-rtdb.firebaseio.com",
-          projectId: "hotel-mandarin-oriental-auth",
-          storageBucket: "hotel-mandarin-oriental-auth.appspot.com",
-          messagingSenderId: "841565255957",
-          appId: "1:841565255957:web:fff3ca63f3e1f9c545911c"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const database = getDatabase(app);
-        const auth = getAuth();
-    
-        login.addEventListener('click',(e)=>{
-   var email = document.getElementById('email').value;
-   var password = document.getElementById('password').value;
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
 
-      signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
 
-        const dt = new Date();
-         update(ref(database, 'users/' + user.uid),{
-          last_login: dt,
-        })
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
 
-         alert('User loged in!');
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
 
-        alert(errorMessage);
-  });
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
 
- });
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
 
-const user = auth.currentUser;
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    const uid = user.uid;
-    //bla bla bla
-    // ...
-  } else {
-    // User is signed out
-    // ...
-    //bla bla bla
-  }
-});
+.log-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
 
-logout.addEventListener('click',(e)=>{
 
-   signOut(auth).then(() => {
-     // Sign-out successful.
-     alert('user loged out');
-   }).catch((error) => {
-     // An error happened.
-     const errorCode = error.code;
-     const errorMessage = error.message;
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
 
-        alert(errorMessage);
-   });
 
-});
-    </script>   
-</body>     
+.overlay {
+	background: #FF416C;
+	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+}
+
+
+.overlay-right {
+	right: 0;
+}
+
+
+.social-container {
+	margin: 50px 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+  </style>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login Form </title>
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form action="#">
+				<h1>Login</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button>Log In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>THE MANDARIN ORIENTAL</h1>
+					<p>Discover your comfort and our services</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>

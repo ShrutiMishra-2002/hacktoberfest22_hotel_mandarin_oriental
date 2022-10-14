@@ -105,14 +105,14 @@ img {
 /* header */
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url("images/hotelheaders.jpg") center/cover no-repeat;
+    url("images/hotelheaderscr.jpg") center/cover no-repeat;
   min-height: 100vh;
   color: #fff;
   padding: 25px;
   display: flex;
   flex-direction: column;
   align-content: stretch;
-  background-position: 50% 67%;
+  background-position: 50% 66%;
 }
 .head-top {
   display: flex;
@@ -468,75 +468,6 @@ img {
     padding: 1rem;
   }
 }
-
-/* booking form */
-.book {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url("images/banner-img.jpg") center/cover no-repeat;
-  color: #fff;
-  padding: 40px 60px;
-}
-.book-form {
-  display: grid;
-}
-.form-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.book-form input[type="submit"] {
-  margin: 18px 0 0 0;
-  background: var(--dark);
-  color: #fff;
-  border: 1px solid #fff;
-}
-.book-form label,
-.book-form input {
-  width: 100%;
-}
-.book-form label {
-  font-weight: 600;
-  word-spacing: 5px;
-  padding-bottom: 8px;
-}
-.book-form input:not(.btn) {
-  margin: 4px 0 16px 0;
-  padding: 12px 15px;
-  border-radius: 5px;
-  font-size: 17px;
-  border: none;
-}
-.book-form input:focus {
-  outline: 0;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
-}
-@media (min-width: 768px) {
-  .book-form {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 24px;
-  }
-}
-@media (min-width: 1170px) {
-  .book-form {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 1370px) {
-  .book-form {
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
-  }
-  .book {
-    height: 40vh;
-    display: grid;
-  }
-}
-@media (max-width: 500px) {
-  .book {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
 /* room */
 
 .rooms {
@@ -628,7 +559,7 @@ img {
   margin-top: 40px;
   padding: 40px 0px 10px 0px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/reviewbanner.jpg") center/cover no-repeat fixed;
+    url("images/reviewbanneror.jpg") center/cover no-repeat fixed;
 }
 
 .rating i {
@@ -765,7 +696,7 @@ img {
 }
 
 .container .cards .content h2{
-  font-family: "Poppins";
+    font-family: "Poppins";
     margin: 20px 0px;
     padding: 0;
 }

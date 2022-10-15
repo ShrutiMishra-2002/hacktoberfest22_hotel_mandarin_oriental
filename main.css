@@ -32,7 +32,8 @@ body{
 
 /* Scroll Button Functionality Starts */
 
-#btnScrollToTop {
+ #btnScrollToTop {
+  display: none;
   position: fixed;
   right: 10px;
   bottom: 10px;
@@ -47,10 +48,59 @@ body{
   cursor: pointer;
 }
 
-#btnScrollToTop:active{
-  background: rgb(12, 214, 12);
+#btnScrollToTop:hover{
+  /* background: rgb(155, 170, 170); */
+  background:#ec9646;
+  color: black;
 }
 
+#btnScrollToTop i{
+
+     font-size: 2rem;
+     
+}
+
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
 /* Scroll Button Functionality Ends */
 
 .btn {

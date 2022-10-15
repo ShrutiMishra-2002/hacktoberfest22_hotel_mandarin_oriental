@@ -1,508 +1,583 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>The Mandarin Oriental</title>
-        <link rel="icon" href="fav.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-        <link rel = "icon" href = "mandarinlogo.jpeg" type = "jpeg">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>
 
-        <div id="preloader"></div>
+<head>
+    <meta charset="utf-8">
+    <title>The Mandarin Oriental</title>
+    <link rel="icon" href="fav.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <!-- header -->
-        <header class = "header" id = "header">
-            <div class = "head-top">
-                <div class = "site-name">
-                    <span><a href="#header">THE MANDARIN ORIENTAL</a></span>
-                </div>
-                <div class = "site-nav">
-                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
-                </div>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="mandarinlogo.jpeg" type="jpeg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span><a href="#header">THE MANDARIN ORIENTAL</a></span>
             </div>
-
-            <div class = "head-bottom flex">
-                <h2>Discover our comfortable and services
-                </h2>
-                <!-- <div class="pointerarea"> -->
-                  <button type = "button" class = "head-btn" onclick="window.location='#Facilities';" >Let's Explore</button>
-                <!-- </div> -->
-            </div>
-        </header>
-        <!-- end of header -->
-        <!-- side navbar -->
-        <div class="scroll-bg"></div>
-        <div class = "sidenav" id = "sidenav">
-            <span class = "cancel-btn" id = "cancel-btn">
-                <i class = "fas fa-times"></i>
-            </span>
-
-            <ul class = "navbar">
-                <li><a href = "#header">Home</a></li>
-                <li><a href = "#Facilities">Facilities</a></li>
-                <li><a href = "#rooms">Rooms</a></li>
-                <li><a href = "#customers">Customers</a></li>
-            </ul>
-            <div class="btn-container">
-                <button class = "btn sign-up"><a href="signup.html"> Sign up</a> </button>
-                <span>or</span>
-                <button class = "btn log-in"><a href="login.html"> Login </a> </button>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
             </div>
         </div>
-        <!-- end of side navbar -->
 
-        <!-- fullscreen modal -->
-        <div id = "modal"></div>
-        <!-- end of fullscreen modal -->
+        <div class="head-bottom flex">
+            <h2>Discover our comfortable and services
+            </h2>
+            <!-- <div class="pointerarea"> -->
+            <button type="button" class="head-btn" onclick="window.location='#Facilities';">Let's Explore</button>
+            <!-- </div> -->
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- side navbar -->
+    <div class="scroll-bg"></div>
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
 
-        <!-- body content  -->
-        <section class = "services sec-width" id = "Facilities">
-            <div class = "title">
-                <h2>Facilities</h2>
-            </div>
-            <div class = "services-container">
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-icon">
-                        <span>
-                            <i class = "fas fa-utensils"></i>
-                        </span>
-                    </div>
-                    <div class = "service-content">
-                        <h2>Food Service</h2>
-                        <p>Food, understood as a simple luxury, is an integral part of the Mandarin Oriental experience. We offer a wide range and intensity of flavours while applying new culinary techniques and always using fresh, seasonal and locally sourced products. Be raedy to dive into this delightfull experience of exotic flavours...</p>
-                        <button type = "button" class = "btn">Know More</button>
-                    </div>
-                </article>
-                <!-- end of single service -->
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-icon">
-                        <span>
-                            <i class = "fas fa-swimming-pool"></i>
-                        </span>
-                    </div>
-                    <div class = "service-content">
-                        <h2>Refreshment</h2>
-                        <p>After a long day of traveling or sightseeing, there's nothing like a refreshing dip in the pool. With gorgeous designs and indulgent features, The Mandarin Oriental hotel pools take an afternoon swim to another level. Get free breakfast and 20% discount on our spa by booking today...</p>
-                        <button type = "button" class = "btn">Know More</button>
-                    </div>
-                </article>
-                <!-- end of single service -->
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-icon">
-                        <span>
-                            <i class = "fas fa-broom"></i>
-                        </span>
-                    </div>
-                    <div class = "service-content">
-                        <h2>Housekeeping</h2>
-                        <p>Cleanliness is the most important practice for a clean and healthy environment. The task of maintaining this cleanliness rests on the shoulders of our trained and experienced housekeeping staff. Organized rooms, clean bathrooms and clean corridors is what you get to experience with us. Our friendly housekeepers will not only do the cleaning but will also help you with any problem...</p>
-                        <button type = "button" class = "btn">Know More</button>
-                    </div>
-                </article>
-                <!-- end of single service -->
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-icon">
-                        <span>
-                            <i class = "fas fa-door-closed"></i>
-                        </span>
-                    </div>
-                    <div class = "service-content">
-                        <h2>Room Security</h2>
-                        <p>Giving you a high class security while not disturbing your privacy is what we do at The Mandarin Oriental so that you can have a great time. The rooms are secured digially with a pin number and magnetic card key. We have installed CCTV cameras is such a manner that every corner outside the room is completely visible and these are maintained by our trustworthy staff...</p>
-                        <button type = "button" class = "btn">Know More</button>
-                    </div>
-                </article>
-                <!-- end of single service -->
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-icon">
-                        <span>
-                            <i class="fas fa-wifi"></i>
-                        </span>
-                    </div>
-                    <div class = "service-content">
-                        <h2>Internet Service</h2>
-                        <p>We provide high speed internet while not disturbing your privacy at The Mandarin Oriental so that you can have a great time. The service is secured by our team so that there is no possibility of your privacy or data breach Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus at numquam porro molestias, delectus maxime Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus temporibus ad quaerat numquam possimus. Aliquam....</p>
-                        <button type = "button" class = "btn">Know More</button>
-                    </div>
-                </article>
-                <!-- end of single service -->
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-icon">
-                        <span>
-                            <i class="fas fa-car"></i>
-                        </span>
-                    </div>
-                    <div class = "service-content">
-                        <h2>Pick-Up and Drop</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis nostrum accusamus cumque vero consequatur ratione eos et modi minus corporis atque dicta, aspernatur quae facere exercitationem? Sint, exercitationem voluptate consequuntur necessitatibus esse eligendi fugiat ipsa maiores qui eaque a praesentium, amet illo modi nisi asperiores mollitia debitis molestias ipsam....</p>
-                        <button type = "button" class = "btn">Know More</button>
-                    </div>
-                </article>
-                <!-- end of single service -->
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-icon">
-                        <span>
-                            <i class="fas fa-dumbbell"></i>
-                        </span>
-                    </div>
-                    <div class = "service-content">
-                        <h2>Gym</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis nostrum accusamus cumque vero consequatur ratione eos et modi minus corporis atque dicta, aspernatur quae facere exercitationem? Sint, exercitationem voluptate consequuntur necessitatibus esse eligendi fugiat ipsa maiores qui eaque a praesentium, amet illo modi nisi asperiores mollitia debitis molestias ipsam....</p>
-                        <button type = "button" class = "btn">Know More</button>
-                    </div>
-                </article>
-                <!-- end of single service -->         
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-icon">
-                        <span>
-                            <i class="fas fa-spa"></i>
-                        </span>
-                    </div>
-                    <div class = "service-content">
-                        <h2>Spa</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis nostrum accusamus cumque vero consequatur ratione eos et modi minus corporis atque dicta, aspernatur quae facere exercitationem? Sint, exercitationem voluptate consequuntur necessitatibus esse eligendi fugiat ipsa maiores qui eaque a praesentium, amet illo modi nisi asperiores mollitia debitis molestias ipsam....</p>
-                        <button type = "button" class = "btn">Know More</button>
-                    </div>
-                </article>
-                <!-- end of single service -->                                                     
-            </div>
-        </section>
+        <ul class="navbar">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#Facilities">Facilities</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+        <div class="btn-container">
+            <button class="btn sign-up"><a href="signup.html"> Sign up</a> </button>
+            <span>or</span>
+            <button class="btn log-in"><a href="login.html"> Login </a> </button>
+        </div>
+    </div>
+    <!-- end of side navbar -->
+    <!-- Back to top button -->
+    <!-- fullscreen modal -->
+    <button onclick="topFunction()" id="btnScrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- end of fullscreen modal -->
 
-        <section class = "rooms sec-width" id = "rooms">
-            <div class = "title">
-                <h2>Rooms</h2>
-            </div>
-            <div class = "rooms-container">
-                <!-- single room -->
-                <article class = "room">
-                    <div class = "room-image">
-                        <img src = "images/deluxeroom.jpg" alt = "deluxe room image">
-                    </div>
-                    <div class = "room-text">
-                        <h3>Deluxe Queen Room
-                        </h3>
-                        <ul>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Coffee / Tea maker
-.
-                            </li>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Gym dumbbells
-.
-                            </li>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Hair dryer.
-                            </li>
-                        </ul>
-                        <div class="cardText">
-                            <p>The room features a king size bed. Room also includes mini fridge, sofa, air conditioning, Wi-Fi,
-                                remote-controlled flat screen TV...</p>
-                            <p>Deluxe rooms, are modern decorated,
-                                totally soundproofed and equipped with high tech comforts such as high speed internet access,
-                                USB ports , smart TV, room cleaning touch system and private hydromassage bathtub.
-
-                            </p>
-                        </div>
-                        <p class = "rate">
-                            <span STYLE="font-size:18.0pt">from 13294 ₹/-</span> Per Night
-                        </p>
-                        <button type = "button" class = "btn" id="deluxe"><a href="booking.html">book now</a></button>
-                    </div>
-                </article>
-                <!-- end of single room -->
-                <!-- single room -->
-                <article class = "room">
-                    <div class = "room-image">
-                        <img src = "images/twinroom.jpg" alt = "twin room image">
-                    </div>
-                    <div class = "room-text">
-                        <h3>Twin Rooms
-                        </h3>
-                        <ul>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Electronic safe box.
-                            </li>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Daily housekeeping services.
-                            </li>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Coffee / Tea maker.
-                            </li>
-                        </ul>
-                        <div class="cardText">
-                            <p>The room features two separate standard  beds. Room also includes mini fridge,
-                                sofa air conditioning,  remote-controlled flat...</p>
-                            <p>Twin rooms with sofa bed, are modern decorated and offering comfortable
-                                 hospitality to a family with 2 children, or a company of 4 adults.
-                                 They are totally soundproofed and equipped with high tech comforts such as high speed internet access,
-                                  USB ports , smart TV, room cleaning touch system.
-                            </p>
-                        </div>
-                        <p class = "rate">
-                            <span>from 14564 ₹/-</span> Per Night
-                        </p>
-                        <button type = "button" class = "btn" id="twin">book now</button>
-                    </div>
-                </article>
-                <!-- end of single room -->
-                <!-- single room -->
-                <article class = "room">
-                    <div class = "room-image">
-                        <img src = "images/standardroom.jpg" alt = "room image">
-                    </div>
-                    <div class = "room-text">
-                        <h3>Standard Rooms
-                        </h3>
-                        <ul>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Free Wi-Fi internet.
-                            </li>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Soundproof walls.
-                            </li>
-                            <li>
-                                <i class = "fas fa-arrow-alt-circle-right"></i>
-                                Bathrobe and slippers.
-                            </li>
-                        </ul>
-                        <div class="cardText">
-                            <p>The room features a bed (standard-size bed). Room also includes air conditioning,
-                                 remote-controlled flat screen TV...
-                            </p>
-                            <p>Standard rooms, are modern decorated that can accommodate up to 2 persons,
-                                totally soundproofed and equipped with high tech comforts such as high speed internet access,
-                                 USB ports , smart TV and room cleaning touch system.
-                            </p>
-                        </div>
-
-                            <p class = "rate">
-                            <span> from 12362 ₹/- </span> Per Night
-                        </p>
-                        <button type = "button" class = "btn" id="standard"><a href="booking.html">book now</a></button>
-                    </div>
-                </article>
-                <!-- end of single room -->
-            </div>
-        </section>
-
-
-        <section class = "customers" id = "customers">
-            <div class = "sec-width">
-                <div class = "title testimonial">
-                    <h2>OUR HAPPY CLIENTS SAY</h2>
+    <!-- body content  -->
+    <a id="button"></a>
+    <section class="services sec-width" id="Facilities">
+        <div class="title">
+            <h2>Facilities</h2>
+        </div>
+        <div class="services-container">
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-utensils"></i>
+                    </span>
                 </div>
-                <div class="container">
-                    <div class="cards">
-                        <div class="imgBx">
-                            <div>
-                                <h2>"Best in Town"</h2>
-                                <div class = "rating">
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "far fa-star"></i></span>
-                                </div>
-                                <br>
-                                <br>
-                                <img src="./images/karen.jpg">
-                                <span>Review from Karen. Uk
-                                </span>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-                        <div class="content">
-                                <h2>"Best in Town"</h2>
-                                <p>Let me start off by stating what a welcoming and friendly staff they have. From the staff who will
-                                    pick you up from the airport to the ones who will serve you at the hotel,
-                                     they will all make you feel right at home.
-
-                                   The staff are always ready to assist you at anytime and can even help you plan your visits to historical
-                                    sites if you want. The ambiance inside and outside the hotel is marvelous and relaxing.
-
-                                   I would definitely go back to Mandarin Oriental anytime.
-                                </p>
-                                <div class = "rating">
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "far fa-star"></i></span>
-                                </div>
-                                <span>Review from Karen. Uk
-                                </span>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="imgBx">
-                                <div>
-                                    <h2>"Perfect Ambience"</h2>
-                                    <div class = "rating">
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "far fa-star"></i></span>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <img src="./images/tarque.jpg">
-                                    <span>Review from Karen. Uk
-                                    </span>
-                                </div>
-                        </div>
-                        <div class="overlay"></div>
-                        <div class="content">
-                                <h2>"Perfect Ambience"</h2>
-                                <p>Very nice & clean place, very tentive and polite staff. Good healthy food,
-                                    and most of all mosquito free environment.
-                                    The hotel is located is a residential area which is quiet and relaxing. The rooms are exceptionally clean and the beds quite comfortable.
-                                    There is a nice big balcony with a comfy sofa to sit and enjoy the surrounding views.
-                                    I so so enjoyed my stay here, and will be back. I highly recommend this place for accomadation,
-                                    rather vacation or business.</p>
-                                    <div class = "rating">
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "far fa-star"></i></span>
-                                    </div>
-                                    <span>Review from Karen. Uk
-                                    </span>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="imgBx">
-                            <div>
-                                <h2>"Memorable Trip"</h2>
-                                <div class = "rating">
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "far fa-star"></i></span>
-                                </div>
-                                <br>
-                                <br>
-                                <img src="./images/morris.jpg">
-                                <span>Review from Karen. Uk</span>
-                        </div>
-                        </div>
-                        <div class="overlay"></div>
-                        <div class="content">
-                                <h2>"Memorable Trip"</h2>
-                                <p>The Mandarin Oriental is such an excellent place to stay. The accommodation is top notch.
-                                    First class. Rooms very clean, nicely decorated, it feels just like home.
-                                    There is a nice big balcony with a comfy sofa to sit and enjoy the surrounding views.
-                                    Staff are absolutely brilliant they will do anything for you with a smile on their faces.
-                                    The chef is amazing, food is prepared on demand. Every meal was delicious.
-                                    Thank you everyone for such a memorable vacation. Will miss you all.</p>
-                                    <div class = "rating">
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "fas fa-star"></i></span>
-                                        <span><i class = "far fa-star"></i></span>
-                                    </div>
-                                    <span>Review from Karen. Uk
-                                    </span>
-                        </div>
-                    </div>
+                <div class="service-content">
+                    <h2>Food Service</h2>
+                    <p>Food, understood as a simple luxury, is an integral part of the Mandarin Oriental experience.
+                        We
+                        offer a wide range and intensity of flavours while applying new culinary techniques and
+                        always
+                        using fresh, seasonal and locally sourced products. Be raedy to dive into this delightfull
+                        experience of exotic flavours...</p>
+                    <button type="button" class="btn">Know More</button>
                 </div>
-            </div>
-        </section>
-        <!-- end of body content -->
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-swimming-pool"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Refreshment</h2>
+                    <p>After a long day of traveling or sightseeing, there's nothing like a refreshing dip in the
+                        pool.
+                        With gorgeous designs and indulgent features, The Mandarin Oriental hotel pools take an
+                        afternoon swim to another level. Get free breakfast and 20% discount on our spa by booking
+                        today...</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-broom"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Housekeeping</h2>
+                    <p>Cleanliness is the most important practice for a clean and healthy environment. The task of
+                        maintaining this cleanliness rests on the shoulders of our trained and experienced
+                        housekeeping
+                        staff. Organized rooms, clean bathrooms and clean corridors is what you get to experience
+                        with
+                        us. Our friendly housekeepers will not only do the cleaning but will also help you with any
+                        problem...</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-door-closed"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Room Security</h2>
+                    <p>Giving you a high class security while not disturbing your privacy is what we do at The
+                        Mandarin
+                        Oriental so that you can have a great time. The rooms are secured digially with a pin number
+                        and
+                        magnetic card key. We have installed CCTV cameras is such a manner that every corner outside
+                        the
+                        room is completely visible and these are maintained by our trustworthy staff...</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
 
-        <!-- footer -->
-        <footer class = "footer">
-            <div class = "footer-container">
-                <div>
-                    <h2>About Us </h2>
-                    <p>Mandarin Oriental Hotel Group having grown from its Asian roots into a global brand,
-                         the Group now operates 33 hotels and seven residences in 23 countries and territories,
-                         with each property reflecting the Group’s oriental heritage and unique sense of place.
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-wifi"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Internet Service</h2>
+                    <p>We provide high speed internet while not disturbing your privacy at The Mandarin Oriental so
+                        that
+                        you can have a great time. The service is secured by our team so that there is no
+                        possibility of
+                        your privacy or data breach Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ducimus at
+                        numquam porro molestias, delectus maxime Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Accusamus temporibus ad quaerat numquam possimus. Aliquam....</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-car"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Pick-Up and Drop</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis nostrum
+                        accusamus
+                        cumque vero consequatur ratione eos et modi minus corporis atque dicta, aspernatur quae
+                        facere
+                        exercitationem? Sint, exercitationem voluptate consequuntur necessitatibus esse eligendi
+                        fugiat
+                        ipsa maiores qui eaque a praesentium, amet illo modi nisi asperiores mollitia debitis
+                        molestias
+                        ipsam....</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-dumbbell"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Gym</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis nostrum
+                        accusamus
+                        cumque vero consequatur ratione eos et modi minus corporis atque dicta, aspernatur quae
+                        facere
+                        exercitationem? Sint, exercitationem voluptate consequuntur necessitatibus esse eligendi
+                        fugiat
+                        ipsa maiores qui eaque a praesentium, amet illo modi nisi asperiores mollitia debitis
+                        molestias
+                        ipsam....</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-spa"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Spa</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis nostrum
+                        accusamus
+                        cumque vero consequatur ratione eos et modi minus corporis atque dicta, aspernatur quae
+                        facere
+                        exercitationem? Sint, exercitationem voluptate consequuntur necessitatibus esse eligendi
+                        fugiat
+                        ipsa maiores qui eaque a praesentium, amet illo modi nisi asperiores mollitia debitis
+                        molestias
+                        ipsam....</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
 
-                        </p>
-                    <ul class = "social-icons">
-                        <li class = "flex">
-                            <i class = "fa fa-twitter fa-2x"></i>
+        </div>
+    </section>
+    <!-- <a id="top-button">hello</a> -->
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>Rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/deluxeroom.jpg" alt="deluxe room image">
+                </div>
+                <div class="room-text">
+                    <h3>Deluxe Queen Room
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Coffee / Tea maker
+                            .
                         </li>
-                        <li class = "flex">
-                            <i class = "fa fa-facebook fa-2x"></i>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Gym dumbbells
+                            .
                         </li>
-                        <li class = "flex">
-                            <i class = "fa fa-instagram fa-2x"></i>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Hair dryer.
                         </li>
                     </ul>
-                </div>
+                    <div class="cardText">
+                        <p>The room features a king size bed. Room also includes mini fridge, sofa, air
+                            conditioning,
+                            Wi-Fi,
+                            remote-controlled flat screen TV...</p>
+                        <p>Deluxe rooms, are modern decorated,
+                            totally soundproofed and equipped with high tech comforts such as high speed internet
+                            access,
+                            USB ports , smart TV, room cleaning touch system and private hydromassage bathtub.
 
-                <div>
-                    <h2>Useful Links</h2>
-                    <a href = "#header">Home</a>
-                    <a href = "#Facilities">Facilities</a>
-                    <a href = "#rooms">Rooms</a>
-                    <a href = "#customers">Customers</a>
+                        </p>
+                    </div>
+                    <p class="rate">
+                        <span STYLE="font-size:18.0pt">from 13294 ₹/-</span> Per Night
+                    </p>
+                    <button type="button" class="btn" id="deluxe"><a href="booking.html">book now</a></button>
                 </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/twinroom.jpg" alt="twin room image">
+                </div>
+                <div class="room-text">
+                    <h3>Twin Rooms
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Electronic safe box.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Daily housekeeping services.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Coffee / Tea maker.
+                        </li>
+                    </ul>
+                    <div class="cardText">
+                        <p>The room features two separate standard beds. Room also includes mini fridge,
+                            sofa air conditioning, remote-controlled flat...</p>
+                        <p>Twin rooms with sofa bed, are modern decorated and offering comfortable
+                            hospitality to a family with 2 children, or a company of 4 adults.
+                            They are totally soundproofed and equipped with high tech comforts such as high speed
+                            internet access,
+                            USB ports , smart TV, room cleaning touch system.
+                        </p>
+                    </div>
+                    <p class="rate">
+                        <span>from 14564 ₹/-</span> Per Night
+                    </p>
+                    <button type="button" class="btn" id="twin">book now</button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/standardroom.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Standard Rooms
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Free Wi-Fi internet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Soundproof walls.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Bathrobe and slippers.
+                        </li>
+                    </ul>
+                    <div class="cardText">
+                        <p>The room features a bed (standard-size bed). Room also includes air conditioning,
+                            remote-controlled flat screen TV...
+                        </p>
+                        <p>Standard rooms, are modern decorated that can accommodate up to 2 persons,
+                            totally soundproofed and equipped with high tech comforts such as high speed internet
+                            access,
+                            USB ports , smart TV and room cleaning touch system.
+                        </p>
+                    </div>
 
-                <!--<div>
+                    <p class="rate">
+                        <span> from 12362 ₹/- </span> Per Night
+                    </p>
+                    <button type="button" class="btn" id="standard"><a href="booking.html">book now</a></button>
+                </div>
+            </article>
+            <!-- end of single room -->
+        </div>
+    </section>
+
+
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title testimonial">
+                <h2>OUR HAPPY CLIENTS SAY</h2>
+            </div>
+            <div class="container">
+                <div class="cards">
+                    <div class="imgBx">
+                        <div>
+                            <h2>"Best in Town"</h2>
+                            <div class="rating">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <br>
+                            <br>
+                            <img src="./images/karen.jpg">
+                            <span>Review from Karen. Uk
+                            </span>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h2>"Best in Town"</h2>
+                        <p>Let me start off by stating what a welcoming and friendly staff they have. From the staff
+                            who
+                            will
+                            pick you up from the airport to the ones who will serve you at the hotel,
+                            they will all make you feel right at home.
+
+                            The staff are always ready to assist you at anytime and can even help you plan your
+                            visits
+                            to historical
+                            sites if you want. The ambiance inside and outside the hotel is marvelous and relaxing.
+
+                            I would definitely go back to Mandarin Oriental anytime.
+                        </p>
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <span>Review from Karen. Uk
+                        </span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="imgBx">
+                        <div>
+                            <h2>"Perfect Ambience"</h2>
+                            <div class="rating">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <br>
+                            <br>
+                            <img src="./images/tarque.jpg">
+                            <span>Review from Karen. Uk
+                            </span>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h2>"Perfect Ambience"</h2>
+                        <p>Very nice & clean place, very tentive and polite staff. Good healthy food,
+                            and most of all mosquito free environment.
+                            The hotel is located is a residential area which is quiet and relaxing. The rooms are
+                            exceptionally clean and the beds quite comfortable.
+                            There is a nice big balcony with a comfy sofa to sit and enjoy the surrounding views.
+                            I so so enjoyed my stay here, and will be back. I highly recommend this place for
+                            accomadation,
+                            rather vacation or business.</p>
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <span>Review from Karen. Uk
+                        </span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="imgBx">
+                        <div>
+                            <h2>"Memorable Trip"</h2>
+                            <div class="rating">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <br>
+                            <br>
+                            <img src="./images/morris.jpg">
+                            <span>Review from Karen. Uk</span>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h2>"Memorable Trip"</h2>
+                        <p>The Mandarin Oriental is such an excellent place to stay. The accommodation is top notch.
+                            First class. Rooms very clean, nicely decorated, it feels just like home.
+                            There is a nice big balcony with a comfy sofa to sit and enjoy the surrounding views.
+                            Staff are absolutely brilliant they will do anything for you with a smile on their
+                            faces.
+                            The chef is amazing, food is prepared on demand. Every meal was delicious.
+                            Thank you everyone for such a memorable vacation. Will miss you all.</p>
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <span>Review from Karen. Uk
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us </h2>
+                <p>Mandarin Oriental Hotel Group having grown from its Asian roots into a global brand,
+                    the Group now operates 33 hotels and seven residences in 23 countries and territories,
+                    with each property reflecting the Group’s oriental heritage and unique sense of place.
+
+                </p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#header">Home</a>
+                <a href="#Facilities">Facilities</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#customers">Customers</a>
+            </div>
+
+            <!--<div>
                     <h2>Privacy</h2>
                     <a href = "#">Career</a>
                     <a href = "#">About Us</a>
                     <a href = "#">Contact Us</a>
                 </div>-->
 
-                <div>
-                    <h2>Contact Us</h2>
-                    <div class = "contact-item">
-                        <span>
-                            <i class = "fas fa-map-marker-alt"></i>
-                        </span>
-                        <span>
-                            Vaksai road, Old Mumbai Pune Highway,Lonavala - 410 401
-                        </span>
-                    </div>
-                    <div class = "contact-item">
-                        <span>
-                            <i class = "fas fa-phone-alt"></i>
-                        </span>
-                        <span>
-                            +91-84545 37534 48
-                        </span>
-                    </div>
-                    <div class = "contact-item">
-                        <span>
-                            <i class = "fas fa-envelope"></i>
-                        </span>
-                        <span>
-                            info@mandarinoriental.com
-                        </span>
-                    </div>
+            <div>
+                <h2>Contact Us</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        Vaksai road, Old Mumbai Pune Highway,Lonavala - 410 401
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +91-84545 37534 48
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@mandarinoriental.com
+                    </span>
                 </div>
             </div>
-        </footer>
-        <!-- end of footer -->
+        </div>
+    </footer>
+    <!-- end of footer -->
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 
-    </body>
+</body>
+
 </html>

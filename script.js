@@ -4,8 +4,9 @@ const sideNav = document.getElementById("sidenav");
 const modal = document.getElementById("modal");
 const scrollBg = document.querySelector(".scroll-bg");
 const navigations = document.querySelectorAll(".navbar li");
+const btn = document.getElementById("button");
 
-var loader= document.getElementById("preloader");
+var loader = document.getElementById("preloader");
 
 navBtn.addEventListener("click", function () {
   sideNav.classList.add("show");
@@ -36,7 +37,27 @@ navigations.forEach((nav) => {
   });
 });
 
-window.addEventListener("load",function(){
-  loader.style.display="none";
+window.addEventListener("load", function () {
+  loader.style.display = "none";
   document.body.style.overflow = "unset";
 });
+
+
+let mybutton = document.getElementById("btnScrollToTop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

@@ -95,6 +95,7 @@ img {
   height: 70vh;
   object-fit: fill;
   display: block;
+  isolation: isolate;
 }
 @media (max-width: 500px) {
   body {
@@ -112,7 +113,9 @@ img {
   display: flex;
   flex-direction: column;
   align-content: stretch;
+  isolation: isolate;
   background-position: 50% 67%;
+
 }
 .head-top {
   display: flex;
@@ -629,6 +632,7 @@ img {
   padding: 40px 0px 10px 0px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("images/reviewbanner.jpg") center/cover no-repeat fixed;
+    isolation: isolate;
 }
 
 .rating i {

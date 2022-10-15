@@ -43,37 +43,6 @@ window.addEventListener("load", function () {
 });
 
 
-// var btn = $('#btnScrollToTop');
-
-// $(window).scroll(function () {
-//   if ($(window).scrollTop() > 300) {
-//     btn.addClass('show');
-//   } else {
-//     btn.removeClass('show');
-//   }
-// });
-
-// btn.on('click', function (e) {
-//   e.preventDefault();
-//   $('html, body').animate({ scrollTop: 0 }, '300');
-// });
-
-// window.onscroll = () => {
-//   toggleTopButton();
-// }
-// function scrollToTop() {
-//   window.scrollTo({ top: 0, behavior: 'smooth' });
-// }
-
-// function toggleTopButton() {
-//   if (document.body.scrollTop > 20 ||
-//     document.documentElement.scrollTop > 20) {
-//     document.getElementById('btnScrollToTop').style.display = "inline-block";
-//   } else {
-//     document.getElementById('btnScrollToTop').style.display = "none";
-//   }
-// }
-
 let mybutton = document.getElementById("btnScrollToTop");
 
 // When the user scrolls down 20px from the top of the document, show the button

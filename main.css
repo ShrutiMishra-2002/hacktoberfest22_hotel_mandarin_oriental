@@ -1,18 +1,7 @@
-#preloader{
-  background: black url(gifloader.gif) no-repeat center center;
-  background-size: 15%;
-  height: 100vh;
-  width:100%;
-  position: fixed;
-  z-index: 100;
-}
-body{
-  overflow: hidden;
-  }
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 
 :root {
-  --transition: all 0.7s ease;
+  --transition: all 0.3s ease;
   --yellow: #ec9646;
   --dark: #292826;
 }
@@ -22,11 +11,23 @@ body{
   margin: 0;
   font-family: "Playfair Display", serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
-body {
+
+body{
+  overflow: hidden;
   line-height: 1.6;
+}
+
+#preloader{
+  background: black url(gifloader.gif) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width:100%;
+  position: fixed;
+  z-index: 100;
 }
 
 /* Scroll Button Functionality Starts */
@@ -57,7 +58,6 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   border: none;
-  border-radius: 5px;
   padding: 10px;
   width: 140px;
   display: block;
@@ -66,7 +66,7 @@ body {
   transition: var(--transition);
 }
 .btn:hover {
-  opacity: 0.85;
+  background-color: #ec9646;
 }
 
 .btn a {
@@ -106,7 +106,7 @@ img {
 /* header */
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url("images/hotelheader.jpg") center/cover no-repeat;
+    url("images/hotelheaders.jpg") center/cover no-repeat;
   min-height: 100vh;
   color: #fff;
   padding: 25px;
@@ -114,12 +114,13 @@ img {
   flex-direction: column;
   align-content: stretch;
   isolation: isolate;
+  background-position: 50% 67%;
+
 }
 .head-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   position: fixed;
   z-index: 10;
 }
@@ -157,7 +158,9 @@ img {
 .head-btn {
   text-decoration: none;
   border: 3px solid rgb(255, 255, 255);
-  color: transparent;
+  color: #fff;
+  background-color: rgb(0,0,0.5);
+  background-color: rgba(0,0,0, 0.4);
   padding: 15px 30px;
   font-size: 28px;
   font-family: sans-serif;
@@ -165,9 +168,16 @@ img {
   transition: all 0.5s;
   position: relative;
   margin-top: 10px;
+  cursor: pointer;
 }
-.head-btn:before {
-  content: "Lets Explore";
+
+.head-btn:hover{
+  background-color: rgb(0,0,0.5);
+  background-color: rgba(0,0,0, 0.1);
+}
+
+/* .head-btn:before {
+  content: "Let's Explore";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,7 +201,7 @@ img {
   opacity: 1;
 }
 .head-btn:after {
-  content: "Lets Explore";
+  content: "Let's Explore";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +223,7 @@ img {
   transform: scale(0) rotatey(360deg);
   left: -100%;
   opacity: 0;
-}
+} */
 @media (max-width: 500px) {
   .head-btn {
     font-size: 17px;
@@ -235,6 +245,8 @@ img {
   position: fixed;
   top: -53px;
   z-index: 9;
+  background-color: rgb(0,0,0.5);
+  background-color: rgba(0,0,0, 0.3);
 }
 
 .scroll-bg.active {
@@ -255,7 +267,6 @@ img {
   margin-top: 50px;
   list-style: none;
   padding: 12px;
-
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -267,16 +278,14 @@ img {
 }
 .navbar li a {
   color: #fff;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-decoration: none;
   padding: 15px 0;
   display: block;
-  opacity: 0.8;
   letter-spacing: 1.5px;
   transition: var(--transition);
 }
 .navbar li a:hover {
-  padding-left: 8px;
   color: var(--yellow);
 }
 
@@ -293,7 +302,7 @@ img {
 
 .sign-up,
 .log-in {
-  background: var(--yellow);
+  background: rgb(32, 31, 31);
   color: #fff;
 }
 
@@ -302,8 +311,7 @@ img {
   text-decoration: none;
   color: #fff;
 }
-
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .site-nav {
     display: block;
     position: fixed;
@@ -404,7 +412,7 @@ img {
   font-size: 30px;
   color: var(--yellow);
   border-bottom: 5px solid var(--dark);
-  width: 235px;
+  width: 100%;
   margin: 15px 0;
 }
 

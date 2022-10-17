@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/booking.css" />
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-md-push-5">
+						<div class="booking-cta">
+							<h1>Make your reservation</h1>
+							<p id="roomDescription">
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-pull-7">
+						<div class="booking-form">
+							<form>
+								<div class="form-group">
+									<span class="form-label">Select a Room</span>
+									<select class="form-control" id="roomOptions">
+										<option></option>
+										<option value="deluxe">Deluxe Queen Room</option>
+										<option value="twin">Twin Rooms</option>
+										<option value="standard">Standard Rooms</option>
+									</select>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<span class="form-label">Check In</span>
+											<input class="form-control" type="date" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<span class="form-label">Check out</span>
+											<input class="form-control" type="date" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<span class="form-label">Rooms</span>
+											<select class="form-control">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<span class="form-label">Adults</span>
+											<select class="form-control">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<span class="form-label">Children</span>
+											<select class="form-control">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+								</div>
+								<div class="form-btn">
+									<button class="submit-btn">Make a Booking</button>
+									<a href="index.html#rooms" class="cancel-btn">Cancel</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script>
+		var selectedRoom = document.getElementById("roomOptions");
+		var booking = document.getElementById("booking");
+		var roomDescription = document.getElementById("roomDescription");
+		booking.style.backgroundImage = "url(images/hotelheader.jpg)";
+		selectedRoom.onclick = function(){
+			if (this.value == "deluxe"){
+				booking.style.backgroundImage = "url(images/deluxeroom.jpg)";
+				roomDescription.innerHTML = 'The room features a king size bed. Room also includes mini fridge, sofa, air conditioning, Wi-Fi, remote-controlled flat screen TV';
+			
+			}
+			else if (this.value == "twin"){
+				booking.style.backgroundImage = "url(images/twinroom.jpg)";
+				roomDescription.innerHTML = 'The room features two separate standard  beds. Room also includes mini fridge, sofa air conditioning,  remote-controlled flat screen TV';
+			}
+			else if (this.value == "standard"){
+				booking.style.backgroundImage = "url(images/standardroom.jpg)";
+				roomDescription.innerHTML = 'The room features a bed (standard-size bed). Room also includes air conditioning, remote-controlled flat screen TV';
+			}
+			else {
+				booking.style.backgroundImage = "url(images/hotelheader.jpg)";
+				roomDescription.innerHTML = '';
+			}
+		}
+	</script>
+</body>
+</html>

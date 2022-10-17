@@ -1,6 +1,15 @@
+<h1 align="center">Hacktoberfest-Accepted Repository </h1>
+<p align="center">
+    <a href="https://hacktoberfest.com/">
+        <img src="https://user-images.githubusercontent.com/39916680/193060738-1facbd63-c6a3-4f84-9473-f9d7b2ee7f8c.png" width="70%">
+    </a>
+</p>
+
+
 <h1 align="center">Mandarin Oriental </h1>
 
-The Mandarin Oriental is a hotel website, it features check in checkout, customers review, facilities, room types etc....
+<b>The Mandarin Oriental is a hotel website, it features check in checkout, customers review, facilities, room types etc.... </b>
+
 
 <h4>[ In development Phase ] 
 
@@ -30,11 +39,19 @@ The Mandarin Oriental is a hotel website, it features check in checkout, custome
 <br><br>
 
 <img src="https://github.com/ShrutiMishra-2002/hacktoberfest22_hotel_mandarin_oriental/blob/main/images/footer.png" alt="footer" width="700px" height="400px">
-<br><br>
 
 </div>
 
+## Contributors of `Hacktoberfest 2022`
 
+<div align="center">
+
+<a href="https://github.com/ShrutiMishra-2002/hacktoberfest22_hotel_mandarin_oriental/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ossamamehmood/Hacktoberfest2022" />
+</a>
+
+  </div>
+  
 # Contribution is fun! 🧡
 
 ## 📌 Tech Stack

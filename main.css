@@ -527,6 +527,11 @@ img{
     display: block;
     color: #fff;
     text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    padding-left: 12px;
 }
 .social-icons{
     list-style: none;

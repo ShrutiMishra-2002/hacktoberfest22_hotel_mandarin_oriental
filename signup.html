@@ -63,9 +63,17 @@ button:hover {
       padding: 10px 18px;  
       margin: 10px 5px;  
   }       
-.container {   
+  .container {   
       padding: 25px;   
-  }   
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .link {
+  color: white;
+  text-decoration: none;
+
+}   
     
 </style>   
 </head>    
@@ -79,6 +87,7 @@ button:hover {
             <input type="text" id="email" placeholder="Enter Email Id" name="email" required>  
             <label>Password : </label>   
             <input type="password" id="password" placeholder="Enter Password" name="password" required>  
+            <label class="last_line" >Already Registered, Sign In<a class="link" href="login.html"> here.</a></label>
 
             <button type="submit" id="signUp">Sign Up</button>   
             

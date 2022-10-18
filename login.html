@@ -1,21 +1,21 @@
-<!DOCTYPE html>   
-<html>   
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<title> Login Page </title>  
-<style>   
-Body {  
-  font-family: Calibri, Helvetica, sans-serif;  
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.717) 100%
-    ),url("./images/hotelheader.jpg");
+    ),url("./images/hotelheaderscr.jpg");
   width: 100vh;
   height: 100vh;
   background-position: center;
   background-size: cover;
-}  
+}
 h1{
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -30,56 +30,56 @@ h1{
   border-radius: 10px;
 }
 
-button {   
-  background-color: #1A5236;   
+button {
+  background-color: #1A5236;
   width: 100%;
   border-radius: 15px;
-  color: rgb(255, 255, 255);   
-  padding: 15px;   
-  margin: 10px 0px;   
-  border: none;   
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
   cursor: pointer;
-} 
+}
 label{
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-size: 18px;
 }
-input[type=text], input[type=password] {   
-      width: 100%;   
-      margin: 8px 0;  
-      padding: 12px 20px;   
-      display: inline-block;  
-      border: none; 
-      border-bottom: 2px solid #BE986F;   
-      box-sizing: border-box;  
-      background: lightgray; 
+input[type=text], input[type=password] {
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px 20px;
+      display: inline-block;
+      border: none;
+      border-bottom: 2px solid #BE986F;
+      box-sizing: border-box;
+      background: lightgray;
       border-radius: 10px;
-  }  
-button:hover {   
-      background-color: black;  
-  }   
-.cancelbtn {   
-      width: auto;   
-      padding: 10px 18px;  
-      margin: 10px 5px;  
-  }       
-.container {   
-      padding: 25px;   
-  }  
-</style>   
-</head>    
-<body>    
-    <form>  
-        <div class="container">   
+  }
+button:hover {
+      background-color: black;
+  }
+.cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      margin: 10px 5px;
+  }
+.container {
+      padding: 25px;
+  }
+</style>
+</head>
+<body>
+    <form>
+        <div class="container">
           <h1> Customer Login Page </h1>
-            <label>Email Id : </label>   
-            <input type="text" id="email" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" id="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit" id="login">Login</button>   
-            
-    </form>     
+            <label>Email Id : </label>
+            <input type="text" id="email" placeholder="Enter Username" name="username" required>
+            <label>Password : </label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+            <button type="submit" id="login">Login</button>
+
+    </form>
 
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -88,7 +88,7 @@ button:hover {
         import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-      
+
         // Your web app's Firebase configuration
         const firebaseConfig = {
           apiKey: "AIzaSyB2TQCjmAlmaxnacWHzeV4Evq7uNe_i9Dw",
@@ -99,19 +99,19 @@ button:hover {
           messagingSenderId: "841565255957",
           appId: "1:841565255957:web:fff3ca63f3e1f9c545911c"
         };
-      
+
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
         const auth = getAuth();
-    
+
         login.addEventListener('click',(e)=>{
    var email = document.getElementById('email').value;
    var password = document.getElementById('password').value;
 
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in 
+        // Signed in
         const user = userCredential.user;
 
         const dt = new Date();
@@ -160,6 +160,6 @@ logout.addEventListener('click',(e)=>{
    });
 
 });
-    </script>   
-</body>     
+    </script>
+</body>
 </html>

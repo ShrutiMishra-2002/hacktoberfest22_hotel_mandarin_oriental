@@ -97,15 +97,15 @@
 		var selectedRoom = document.getElementById("roomOptions");
 		var booking = document.getElementById("booking");
 		var roomDescription = document.getElementById("roomDescription");
-		booking.style.backgroundImage = "url(images/hotelheader.jpg)";
+		booking.style.backgroundImage = "url(images/customer-banner.jpg)";
 		selectedRoom.onclick = function(){
 			if (this.value == "deluxe"){
-				booking.style.backgroundImage = "url(images/deluxeroom.jpg)";
+				booking.style.backgroundImage = "url(images/deluxeroomor.jpg)";
 				roomDescription.innerHTML = 'The room features a king size bed. Room also includes mini fridge, sofa, air conditioning, Wi-Fi, remote-controlled flat screen TV';
-			
+
 			}
 			else if (this.value == "twin"){
-				booking.style.backgroundImage = "url(images/twinroom.jpg)";
+				booking.style.backgroundImage = "url(images/twinroomor.jpg)";
 				roomDescription.innerHTML = 'The room features two separate standard  beds. Room also includes mini fridge, sofa air conditioning,  remote-controlled flat screen TV';
 			}
 			else if (this.value == "standard"){
@@ -113,7 +113,7 @@
 				roomDescription.innerHTML = 'The room features a bed (standard-size bed). Room also includes air conditioning, remote-controlled flat screen TV';
 			}
 			else {
-				booking.style.backgroundImage = "url(images/hotelheader.jpg)";
+				booking.style.backgroundImage = "url(images/hotelheaderscr.jpg)";
 				roomDescription.innerHTML = '';
 			}
 		}

@@ -105,14 +105,14 @@ img {
 /* header */
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url("images/hotelheaders.jpg") center/cover no-repeat;
+    url("images/hotelheaderscr.jpg") center/cover no-repeat;
   min-height: 100vh;
   color: #fff;
   padding: 25px;
   display: flex;
   flex-direction: column;
   align-content: stretch;
-  background-position: 50% 67%;
+  background-position: 50% 66%;
 }
 .head-top {
   display: flex;
@@ -467,6 +467,10 @@ img {
     font-size: 1.1rem;
     padding: 1rem;
   }
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* booking form */
@@ -567,7 +571,7 @@ img {
 }
 .cardText {
   width: 100%;
-  height: 35vh;
+  height: auto;
 }
 .rate {
   opacity: 0.8;
@@ -582,12 +586,28 @@ img {
   cursor: pointer;
 }
 .room-image img {
+  object-fit: cover;
   transition: var(--transition);
 }
+
 .room-image:hover img {
   transform: scale(1.1);
 }
-@media (min-width: 900px) {
+
+@media(max-width:1000px){
+  .room-image img {
+    object-fit: cover;
+  }
+}
+
+@media(max-width:1000px){
+  .room-image img {
+    object-fit: contain;
+    height: auto;
+  }
+}
+
+@media (min-width: 940px) {
   .rooms-container {
     display: flex;
     flex-wrap: wrap;
@@ -597,6 +617,7 @@ img {
     flex: 0 0 calc(50% - 20px);
     margin: 10px;
   }
+
 }
 @media (min-width: 1368px) {
   .rooms-container {
@@ -625,14 +646,14 @@ img {
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
 
 .customers {
-  margin-top: 40px;
-  padding: 40px 0px 10px 0px;
+  margin-top: 1.5rem;
+  padding: 2.5rem 0 0.625rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/reviewbanner.jpg") center/cover no-repeat fixed;
+    url("images/reviewbannero.jpg") center/cover no-repeat fixed;
 }
 
 .rating i {
-  margin: 10px 0;
+  margin: 1rem 0;
   color: var(--yellow);
 }
 
@@ -641,23 +662,53 @@ img {
 }
 
 .container{
-   position: relative;
-   height: 600px;
-   display:flex;
-   justify-content: space-between;
-   margin-top: 50px;
-   margin-bottom: 50px;
+   height: 37.5rem;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   margin-top: 3.125rem;
+   margin-bottom: 3.125rem;
 }
 .container .cards{
     position: relative;
-    width: 400px;
-    height: 600px;
+    width: 25rem;
+    height: 37.5rem;
+    margin: auto;
     background: #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    border-radius: 10px;
+    border-radius: 0.625rem;
+}
+
+@media (max-width: 1500px) {
+  .customers {
+    padding: 2.5rem 0 36.625rem 0;
+  }
+  .container .cards{
+    margin-bottom: 0.525rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .customers {
+    padding: 2.5rem 0 21rem 0;
+  }
+  .container .cards{
+    height: 30rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 754px) {
+  .customers {
+    padding: 2.5rem 0 55rem 0;
+  }
+  .container .cards{
+    height: 30rem;
+    width: 20rem;
+  }
 }
 
 .container .cards:before{
@@ -684,30 +735,29 @@ img {
     text-align: center;
 }
 .container .cards .imgBx img{
-  width: 250px;
-  height: 250px;
+  width: 15.625rem;
+  height: 15.625rem;
   border-radius: 50%;
-  margin-bottom: 15px;
-  padding-right: 0;
+  margin-bottom: 0.938rem;
 }
 
 
 .container .cards .imgBx h2{
-    margin: 10px 0 0;
+    margin: 0.625rem 0 0;
     padding: 0;
     color: #fff;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     text-transform: uppercase;
 }
 .container .cards .overlay{
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    box-shadow: 0 0.125rem 0.313rem rgba(0,0,0,.2);
     cursor: pointer;
     border-radius: 50%;
     transition: 0.5s;
@@ -718,8 +768,8 @@ img {
     width: 100%;
     height: 100%;
     box-shadow: none;
-    opacity: 0.9;
-    border-radius: 10px;
+    opacity:1;
+    border-radius: 0.625rem;
 }
 .container .cards .overlay:before{
     content: 'Read';
@@ -728,10 +778,10 @@ img {
     left: 0;
     right: 0;
     bottom:0;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -743,7 +793,7 @@ img {
     transition-delay: 0s;
 }
 .container .cards .content{
-    padding:40px;
+    padding:2.5rem;
     box-sizing: border-box;
     z-index: 1;
     pointer-events: none;
@@ -755,24 +805,19 @@ img {
 .container .cards .overlay:hover ~ .content{
     opacity: 1;
     visibility: visible;
-    transition:0.2s;
-    transition-delay: 0.5s;
+    transition:0.1s;
+    transition-delay: 0.2s;
     color: #000;
-}
-.container .cards .content span{
-  margin-top: 10px;
-  color: #000;
 }
 
 .container .cards .content h2{
-  font-family: "Poppins";
-    margin: 20px 0px;
-    padding: 0;
+    font-family: "Poppins";
 }
 .container .cards .content p{
-   font-size: 15px;
+   font-size: 0.938rem;
    font-family: "Poppins";
 }
+
 
 /* footer */
 .footer {
@@ -784,6 +829,7 @@ img {
   align-items: center;
   flex-flow: row wrap;
 }
+
 .footer-container {
   width: 85vw;
   margin: 0 auto;

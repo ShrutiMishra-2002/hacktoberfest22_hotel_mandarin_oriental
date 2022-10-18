@@ -1,22 +1,22 @@
-<!DOCTYPE html>   
-<html>   
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<title> Login Page </title>  
-<style>   
-Body {  
-  font-family: Calibri, Helvetica, sans-serif;  
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
   /* background-color:#d4c6ae;   */
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.717) 100%
-    ),url("./images/hotelheader.jpg");
+    ),url("./images/hotelheaderscr.jpg");
   width: 100vh;
   height: 100vh;
   background-position: center;
   background-size: cover;
-}  
+}
 h1{
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -30,60 +30,60 @@ h1{
   background-color: rgba(128, 128, 128, 0.37);
   border-radius: 10px;
 }
-button {   
-  background-color: #1A5236;   
+button {
+  background-color: #1A5236;
   width: 100%;
   border-radius: 15px;
-  color: rgb(255, 255, 255);   
-  padding: 15px;   
-  margin: 10px 0px;   
-  border: none;   
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
   cursor: pointer;
-} 
+}
 label{
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-size: 18px;
 }
-input[type=text], input[type=password] {   
-      width: 100%;   
-      margin: 8px 0;  
-      padding: 12px 20px;   
-      display: inline-block;  
-      border: none; 
-      box-sizing: border-box;  
-      background: lightgray ; 
+input[type=text], input[type=password] {
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px 20px;
+      display: inline-block;
+      border: none;
+      box-sizing: border-box;
+      background: lightgray ;
       border-radius: 10px;
-  }  
-button:hover {   
-      background-color: black;  
-  }   
-.cancelbtn {   
-      width: auto;   
-      padding: 10px 18px;  
-      margin: 10px 5px;  
-  }       
-.container {   
-      padding: 25px;   
-  }   
-    
-</style>   
-</head>    
-<body>    
-    <form>  
-        <div class="container">  
-          <h1> Customer Signup Page </h1> 
-            <label>Username : </label>   
-            <input type="text" id="username" placeholder="Enter Username" name="username" required>  
-            <label>Email id : </label>   
-            <input type="text" id="email" placeholder="Enter Email Id" name="email" required>  
-            <label>Password : </label>   
-            <input type="password" id="password" placeholder="Enter Password" name="password" required>  
+  }
+button:hover {
+      background-color: black;
+  }
+.cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      margin: 10px 5px;
+  }
+.container {
+      padding: 25px;
+  }
 
-            <button type="submit" id="signUp">Sign Up</button>   
-            
-    </form>     
-</body> 
+</style>
+</head>
+<body>
+    <form>
+        <div class="container">
+          <h1> Customer Signup Page </h1>
+            <label>Username : </label>
+            <input type="text" id="username" placeholder="Enter Username" name="username" required>
+            <label>Email id : </label>
+            <input type="text" id="email" placeholder="Enter Email Id" name="email" required>
+            <label>Password : </label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit" id="signUp">Sign Up</button>
+
+    </form>
+</body>
 
 <script type="module">
     // Import the functions you need from the SDKs you need
@@ -92,7 +92,7 @@ button:hover {
     import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
-  
+
     // Your web app's Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyB2TQCjmAlmaxnacWHzeV4Evq7uNe_i9Dw",
@@ -103,7 +103,7 @@ button:hover {
       messagingSenderId: "841565255957",
       appId: "1:841565255957:web:fff3ca63f3e1f9c545911c"
     };
-  
+
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const database = getDatabase(app);
@@ -117,7 +117,7 @@ var username = document.getElementById('username').value;
 
 createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-   // Signed in 
+   // Signed in
     const user = userCredential.user;
 
     set(ref(database, 'users/' + user.uid),{
@@ -137,5 +137,5 @@ createUserWithEmailAndPassword(auth, email, password)
   });
 
 });
-</script>    
+</script>
 </html>

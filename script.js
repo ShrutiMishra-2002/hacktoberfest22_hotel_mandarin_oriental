@@ -40,3 +40,32 @@ window.addEventListener("load",function(){
   loader.style.display="none";
   document.body.style.overflow = "unset";
 });
+
+function darkTheme(){
+  document.body.classList.toggle("dark-mode");
+  const darkHeadingsELes = document.querySelectorAll(".drk-md-hnd");
+  for(const darkHeadingsELe of darkHeadingsELes){
+    darkHeadingsELe.classList.toggle("dark-mode-headings");
+  }
+
+  const darkTitleELes = document.querySelectorAll(".title");
+  for(const darkTitleELe of darkTitleELes){
+    darkTitleELe.classList.toggle("dark-title");
+  }
+
+  const darkReviewsCards = document.querySelectorAll(".content");
+  for(const darkReviewsCard of darkReviewsCards){
+    darkReviewsCard.classList.toggle("dark-card-hover");
+  }
+
+  const darkReviewsTexts = document.querySelectorAll(".customers-text");
+  for(const darkReviewsText of darkReviewsTexts){
+    darkReviewsText.classList.toggle("dark-customers-text");
+  }
+
+  const darkFontAweIcons = document.querySelectorAll(".fas");
+  for(const darkFontAweIcon of darkFontAweIcons){
+    darkFontAweIcon.classList.toggle("fa-dark-iconcolor");
+  }
+
+}

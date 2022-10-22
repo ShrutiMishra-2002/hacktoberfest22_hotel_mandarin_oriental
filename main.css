@@ -5,6 +5,7 @@
   --yellow: #ec9646;
   --dark: #292826;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,6 +20,7 @@ html {
 body{
   overflow: hidden;
   line-height: 1.6;
+  transition: var(--transition);
 }
 
 #preloader{
@@ -28,6 +30,26 @@ body{
   width:100%;
   position: fixed;
   z-index: 100;
+}
+
+.dark-mode-switch{
+  position: fixed;
+  bottom:1rem;
+  left:1rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: url("images/theme.png") center/cover no-repeat;
+  cursor: pointer;
+}
+
+.dark-mode{
+  background-color: #424242;
+  color: #fff;
+}
+
+.dark-mode-headings{
+  color:#fff;
 }
 
 /* Scroll Button Functionality Starts */
@@ -412,6 +434,9 @@ img {
   width: 100%;
   margin: 15px 0;
 }
+.dark-title{
+  border-bottom: 5px solid var(--yellow);
+}
 
 .sec-width {
   width: 85vw;
@@ -443,9 +468,7 @@ img {
 .service-content {
   padding-left: 20px;
 }
-.service-content h2 {
-  opacity: 0.7;
-}
+
 .service-content button {
   margin-left: 0;
   margin-right: 0;
@@ -762,6 +785,13 @@ img {
     border-radius: 50%;
     transition: 0.5s;
 }
+
+.fa-dark-iconcolor{
+  color: var(--yellow) ;
+}
+.fa-times:before {
+    content: "" !important;
+}
 .container .cards .overlay:hover{
     bottom: 0;
     right: 0;
@@ -808,6 +838,14 @@ img {
     transition:0.1s;
     transition-delay: 0.2s;
     color: #000;
+}
+
+.dark-card-hover{
+  background-color: #424242;
+}
+
+.dark-customers-text{
+  color:white;
 }
 
 .container .cards .content h2{

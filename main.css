@@ -87,8 +87,10 @@ body{
   cursor: pointer;
   transition: var(--transition);
 }
-.btn:hover {
-  background-color: #ec9646;
+
+
+#Facilities .btn:hover {
+  background-color: #2e2924;
 }
 
 .btn a {
@@ -98,6 +100,16 @@ body{
 .btn a:visited {
   text-decoration: none;
 }
+
+#rooms .btn:hover{
+  background-color: #ec9646;
+  color: white;
+}
+
+.btn-container button{
+  background-color: #ec9646;
+}
+
 .flex {
   display: flex;
   flex-direction: column;

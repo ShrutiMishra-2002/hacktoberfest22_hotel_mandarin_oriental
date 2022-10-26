@@ -42,7 +42,7 @@
 
 </div>
 
-## Contributors of `Hacktoberfest 2022`
+<!--## Contributors of `Hacktoberfest 2022`
 
 <div align="center">
 
@@ -50,7 +50,7 @@
   <img src="https://contrib.rocks/image?repo=ossamamehmood/Hacktoberfest2022" />
 </a>
 
-  </div>
+  </div> -->
   
 # Contribution is fun! 🧡
 

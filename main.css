@@ -23,9 +23,10 @@ body{
   transition: var(--transition);
 }
 
+/* preloader icon updated and black color removed  */
 #preloader{
-  background: black url(gifloader.gif) no-repeat center center;
-  background-size: 15%;
+  background:url('https://media.giphy.com/media/OcKLo9xfUxnEgKUw7i/giphy.gif') no-repeat center center;
+  background-size: 25%;
   height: 100vh;
   width:100%;
   position: fixed;

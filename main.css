@@ -951,3 +951,26 @@ img {
   left: 0;
   z-index: 5;
 }
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-corner{
+  border-radius: 10px;
+  background: #ec9646 ;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+	background: #ec9646 ;
+	border-radius: 10px;
+}
+
+body{
+  overflow: overlay;
+}
+

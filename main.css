@@ -464,6 +464,11 @@ img {
 }
 
 /* service */
+.title h2 {
+    font-size: 30px!important;
+}
+
+
 .services {
   margin: 40px 0;
 }
